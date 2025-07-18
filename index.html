@@ -1,4 +1,6 @@
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,7 @@
     <link rel="icon" href="https://cdn.jsdelivr.net/gh/monorolls/dti@main/robux.png">
     <title>[🐝] Grow a Garden 🌻</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/monorolls/grow@main/1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/monorolls/grow@main/pop.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
     <meta name="description" content="[🐝] Grow a Garden 🌻">
     <meta name="robots" content="index, follow">
@@ -19,42 +22,52 @@
     <meta name="twitter:description" content="Discover the best deals for 2x Money, Dragon Fruit, and more!">
     <meta name="twitter:image" content="https://d39fkvblvwpxa1.cloudfront.net/uploads/17426529541a9ea5df6f762fec7ce8afb69c3747cc.png">
 
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-</head>
-<body>
-  <style>
 
-  .card img {
-  width: 160px;      
-  height: 160px;
-  object-fit: contain; 
-  display: block;
-  margin: 0 auto;      
-}
-  </style>
+<div class="popup-overlay" id="popup">
+  <div class="popup-box">
+    <div class="popup-header">
+      <div class="slider-container">
+        <div class="slider-images" id="sliderImages">
+          <img src="https://tr.rbxcdn.com/180DAY-56defcbd772b83567759b4ce56f91fcf/768/432/Image/Webp/noFilter" alt="Image 1">
+          <img src="https://tr.rbxcdn.com/180DAY-15980c43aca04b387045cf3d39cb93b6/768/432/Image/Webp/noFilter" alt="Image 2">
+          <img src="https://tr.rbxcdn.com/180DAY-c010566cf71816eb7b727ecf935d6e67/768/432/Image/Webp/noFilter" alt="Image 3">
+        </div>
+      </div>
+    </div>
+    <div class="popup-content">
+      <div class="message-box">
+        <strong>
+          Complete a simple 1 task bellow and your Items will be sent to your account don't worry it's free
+        </strong>
+        Don't worry, it is very easy!
+      </div>
+      <div class="popup-buttons">
+     <div class="popup-buttons">
+       
+       <button onclick="window.open('https://smrturl.co/7760468	', '_blank')">Complete this quick task to unlock your reward</button>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
     <div class="header">
         <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/logo3.webp" alt="Logo" class="logo">
         <h2 class="fix-stroke">Fruit/Pets Generator</h2>
         <input type="text" id="username" placeholder="Enter Username">
         <div id="warning-username" class="warning" style="display:none;"></div>
-        <button class="fix-stroke" id="generate">Generate!</button>
+        <button  class="fix-stroke" id="generate">Generate!</button>
     </div>
 
+  
+  
+  
     <p class="small-text">Browse through the available fruits/pets:</p>
     <div id="warning-pet-limit" class="warning" style="display:none;">You can only select up to 3 fruits/pets!</div>
     <div id="warning-no-pet" class="warning" style="display:none;">Please select at least one fruit/pets!</div>
 
     <div class="card-container">
-        <div class="card" id="card18">
+         <div class="card" id="card18">
         <div class="circle"></div>
         <img src="https://cdn.jsdelivr.net/gh/monorolls/grow@main/GiantPinecone.webp" alt="Giant Pinecone">
         <div class="card-content">
@@ -452,11 +465,20 @@ function addFloatingImages(container) {
 
 addFloatingImages(floatingImagesContainer);
 animateImages();
-  
+    function _ff() {
+    document.getElementById('popup').style.display = 'flex';
+  }
+
+  const sliderImages = document.getElementById('sliderImages');
+  let currentIndex = 0;
+  const totalImages = 3;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalImages;
+    sliderImages.style.transform = `translateX(-${currentIndex * 33.3333}%)`;
+  }, 5000); 
+
   </script>
-<script type="text/javascript">
-    var LIxgv_FMe_UOuDUc={"it":4527339,"key":"1a2b3"};
-</script>
-<script src="https://dfmpe7igjx4jo.cloudfront.net/a60daa2.js"></script>
+
 </body>
 </html>
